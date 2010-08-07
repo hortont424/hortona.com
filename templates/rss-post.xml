@@ -1,0 +1,8 @@
+    <item xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <title>${Markup(post.title)}</title>
+        <link>${post.url}</link>
+        <pubDate>${post.pubDate}</pubDate>
+        <guid isPermaLink="false">${post.guid}</guid>
+        <description><![CDATA[${Markup(post.shortContent)}]]></description>
+        <content:encoded><![CDATA[${Markup(post.content)}]]></content:encoded>
+    </item>

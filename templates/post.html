@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="${baseurl}styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="${baseurl}styles/blog.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata" />
+
+    <title>hortona &middot; blog &middot; ${Markup(post.title)}</title>
+  </head>
+  <body class="index">
+    <xi:include href="button-bar.html" />
+
+    <table id="posts" border="0" width="100%">
+    <tr>
+        <td></td>
+        <td class="post">
+            <div class="postContent">
+            <h1>${Markup(post.title)}</h1>
+            <h2>${post.date} in ${Markup(post.categories)}</h2>
+            <p>${Markup(post.content)}</p>
+            </div>
+        </td>
+        <td></td>
+    </tr>
+    </table>
+  </body>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-86821-5");
+  pageTracker._setDomainName(".hortona.com");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>

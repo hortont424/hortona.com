@@ -1,0 +1,133 @@
+body
+{
+    background-color: #edeceb;
+    font-family: 'Myriad Pro', 'Calibri', 'Lucida Grande', Verdana, Helvetica, Arial, sans-serif;
+}
+
+a
+{
+    color: #38e;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #27d;
+    text-decoration: underline;
+}
+
+img
+{
+    border: 0px;
+}
+
+h1
+{
+    color: #333;
+    font-weight: normal;
+    font-size: 1.7em;
+    margin: 0px;
+}
+
+h1>a
+{
+    color: #333;
+}
+
+h2
+{
+    color: #888;
+    font-weight: normal;
+    font-size: 0.9em;
+    margin: 0px;
+}
+
+li
+{
+    padding-bottom: 0.6em;
+}
+
+#posts
+{
+    width: 100%;
+}
+
+div.postContent
+{
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px !important;
+    color: #444;
+    font-size: 0.8em;
+    background-color: #fff;
+    width: 600px;
+    padding: 20px 20px 5px 20px;
+    margin: 0px 0px 20px 0px;
+    line-height: 1.5em;
+    text-align: justify;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7) !important;
+}
+
+#buttonbar
+{
+    padding: 15px 0px 5px 0px;
+}
+
+div.button
+{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.6;
+    float: none !important;
+    display: inline-block;
+}
+
+div.button:hover
+{
+    opacity: 0.8;
+}
+
+td.button
+{
+    width: 100px;
+}
+
+#blog
+{
+    background: transparent url(${staticurl}images/buttonbar/blog-small.png) -2px -2px no-repeat;
+}
+#archives
+{
+    background: transparent url(${staticurl}images/buttonbar/archives-small.png) -2px -2px no-repeat;
+}
+#profiles
+{
+    background: transparent url(${staticurl}images/buttonbar/profiles-small.png) -2px -2px no-repeat;
+}
+#about
+{
+    background: transparent url(${staticurl}images/buttonbar/about-small.png) -2px -2px no-repeat;
+}
+#projects
+{
+    background: transparent url(${staticurl}images/buttonbar/projects-small.png) -2px -2px no-repeat;
+}
+#planet
+{
+    background: transparent url(${staticurl}images/buttonbar/planet-small.png) -2px -2px no-repeat;
+}
+
+pre
+{
+    font-family: 'Inconsolata', 'Droid Sans Mono', 'Courier New', monospace;
+    font-size: 1.2em;
+    padding: 1em 0.5em;
+    border: 1px solid #ddd;
+    margin: 0px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}

@@ -1,0 +1,12 @@
+<div class="postContent" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+<py:if test="not post.noChrome">
+<h1><a href="${post.url}">${Markup(post.title)}</a></h1>
+<h2>${post.date} in ${Markup(post.categories)}</h2>
+</py:if>
+<p>${Markup(post.content)}</p>
+<py:if test="not post.noChrome">
+<p class="commentLink"><a href="${post.url}">Comments...</a></p>
+</py:if>
+</div>
