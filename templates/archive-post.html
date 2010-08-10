@@ -3,7 +3,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude">
 <py:if test="not post.noChrome">
 <h1><a href="${post.url}">${Markup(post.title)}</a></h1>
-<h2>${post.date} in ${Markup(post.categories)}</h2>
+<h2>On ${post.date}, in ${Markup(post.categories)}, ${Markup(post.author)} wrote:</h2>
 </py:if>
 <p>${Markup(post.content)}</p>
 <py:if test="not post.noChrome">

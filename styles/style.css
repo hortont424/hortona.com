@@ -1,7 +1,8 @@
 body
 {
-    background-color: #edeceb;
+    background-color: #fffaff;
     font-family: 'Myriad Pro', 'Calibri', 'Lucida Grande', Verdana, Helvetica, Arial, sans-serif;
+    margin: 0px;
 }
 
 a
@@ -23,15 +24,35 @@ img
 
 h1
 {
-    color: #333;
-    font-weight: normal;
-    font-size: 1.7em;
-    margin: 0px;
+    color: #fffaff;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: right;
+    text-shadow: #000 1px 1px 1px;
+    margin: -23px -23px -5px -20px;
+    padding: 14px 12px 12px 12px;
+    background: #75507b;
+
+    -moz-border-radius: 8px 20px 8px 20px;
+    -webkit-border-radius: 8px 20px 8px 20px;
+    border-radius: 0px 20px 0px 20px !important;
+
+    float: right;
 }
 
 h1>a
 {
-    color: #333;
+    color: #fffaff;
+}
+
+h1>a:hover
+{
+    color: #fffaff;
+
+    cursor: pointer;
+    opacity: 0.6;
+
+    text-decoration: none;
 }
 
 h2
@@ -54,9 +75,9 @@ li
 
 div.postContent
 {
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px !important;
+    -moz-border-radius: 8px 20px 8px 20px;
+    -webkit-border-radius: 8px 20px 8px 20px;
+    border-radius: 8px 20px 8px 20px !important;
     color: #444;
     font-size: 0.8em;
     background-color: #fff;
@@ -65,59 +86,77 @@ div.postContent
     margin: 0px 0px 20px 0px;
     line-height: 1.5em;
     text-align: justify;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7) !important;
+
+
+    border: 3px solid #75507b;
 }
 
 #buttonbar
 {
-    padding: 15px 0px 5px 0px;
+    margin: 0px auto 0px auto;
+    padding: 18px 25px 15px 25px;
+
+    width: 650px;
+
+    background: #75507b;
+
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 15px 15px !important;
+    border: 3px solid #ad7fa8;
+    border-top: 0px;
+    color: #fffaff;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: right;
+    text-shadow: #000 1px 1px 1px;
 }
 
-div.button
+#subbuttonbar
 {
-    width: 100px;
-    height: 50px;
+    margin: -3px auto 20px auto;
+    padding: 5px 25px 5px 25px;
+
+    width: 590px;
+
+    background: #75507b;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75507b', endColorstr='#ad7fa8');
+    background: -webkit-gradient(linear, left top, left bottom, from(#75507b), to(#ad7fa8));
+    background: -moz-linear-gradient(top,  #75507b,  #ad7fa8);
+
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 15px 15px !important;
+    border: 3px solid #ad7fa8;
+    border-top: 0px;
+    color: #fffaff;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: right;
+    text-shadow: #000 1px 1px 1px;
+}
+
+a.button
+{
+    color: #fffaff;
     cursor: pointer;
     opacity: 0.6;
     float: none !important;
     display: inline-block;
 }
 
-div.button:hover
+a.button:hover
 {
-    opacity: 0.8;
+    color: #fffaff;
+    opacity: 1.0;
+    text-decoration: none;
 }
 
-td.button
+a.selectedButton
 {
-    width: 100px;
-}
-
-#blog
-{
-    background: transparent url(${staticurl}images/buttonbar/blog-small.png) -2px -2px no-repeat;
-}
-#archives
-{
-    background: transparent url(${staticurl}images/buttonbar/archives-small.png) -2px -2px no-repeat;
-}
-#profiles
-{
-    background: transparent url(${staticurl}images/buttonbar/profiles-small.png) -2px -2px no-repeat;
-}
-#about
-{
-    background: transparent url(${staticurl}images/buttonbar/about-small.png) -2px -2px no-repeat;
-}
-#projects
-{
-    background: transparent url(${staticurl}images/buttonbar/projects-small.png) -2px -2px no-repeat;
-}
-#planet
-{
-    background: transparent url(${staticurl}images/buttonbar/planet-small.png) -2px -2px no-repeat;
+    color: #fffaff;
+    opacity: 1.0;
+    font-style: italic;
 }
 
 pre
