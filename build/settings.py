@@ -13,7 +13,7 @@ if os.getcwd() == "/Users/hortont/src/hortona.com":
     www_prefix = "http://localhost/~hortont/amy/"
     static_prefix = "http://localhost/~hortont/amy/"
 
-blog_dir = "blog/"
+blog_dir = ""
 
 blog_prefix = www_prefix + blog_dir
 
