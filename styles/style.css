@@ -1,7 +1,7 @@
 body
 {
     background-color: #fffaff;
-    font-family: 'Myriad Pro', 'Calibri', 'Lucida Grande', Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Grande', sans-serif;
     margin: 0px;
 }
 
@@ -30,7 +30,7 @@ h1
     text-align: right;
     text-shadow: #000 1px 1px 1px;
     margin: -23px -23px -5px -20px;
-    padding: 14px 12px 12px 12px;
+    padding: 12px;
     background: #75507b;
 
     -moz-border-radius: 8px 20px 8px 20px;
