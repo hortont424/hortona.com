@@ -105,9 +105,9 @@ def renderArchive(c, template, next, prev, rss=False, category=None):
 
     showTitle = (category != None)
 
-    rssurl = blog_prefix + "/feed/rss.xml"
+    rssurl = os.path.join(blog_prefix, "feed/rss.xml")
     if category:
-        rssurl = blog_prefix + "/topics/" + category + "/feed/rss.xml"
+        rssurl = os.path.join(blog_prefix, "topics", category, "feed/rss.xml")
 
     tmpl = loader.load(template + '.' + postfix, encoding='utf-8')
     return tmpl.generate(content=c.decode("utf-8","ignore"),
