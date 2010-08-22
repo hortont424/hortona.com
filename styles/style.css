@@ -156,13 +156,6 @@ a.button:hover
     text-decoration: none;
 }
 
-a.selectedButton
-{
-    color: #fffaff;
-    opacity: 1.0;
-    font-style: italic;
-}
-
 pre
 {
     font-family: 'Inconsolata', 'Droid Sans Mono', 'Courier New', monospace;
