@@ -40,6 +40,8 @@ check-links:
 	python2.6 ./build/testLinks.py
 
 push:
+	git commit -a -m "push from amy"
+	git push
 	rm -rf /tmp/hortona.com
 	cd /tmp ; git clone git@github.com:hortont424/hortona.com
 	cd /tmp/hortona.com ; make ; rsync -a --progress /tmp/hortona.com/output/ amy@hortona.com:/srv/amy
