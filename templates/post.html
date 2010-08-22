@@ -28,6 +28,20 @@
             <h1>${Markup(post.title)}</h1>
             <h2>On ${post.date}, in ${Markup(post.categories)}, ${Markup(post.author)} wrote:</h2>
             <p>${Markup(post.content)}</p>
+            <div id="disqus_thread"></div><br/>
+<script type="text/javascript">
+  /**
+    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+    */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://rockermonkey.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=rockermonkey">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
             </div>
         </td>
         <td></td>
